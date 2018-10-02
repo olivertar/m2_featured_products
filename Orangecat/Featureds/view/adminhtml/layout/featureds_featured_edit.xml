@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+ ~ Orange Cat
+ ~ Copyright (C) 2018 Orange Cat
+ ~
+ ~ NOTICE OF LICENSE
+ ~
+ ~ This program is free software: you can redistribute it and/or modify
+ ~ it under the terms of the GNU General Public License as published by
+ ~ the Free Software Foundation, either version 3 of the License, or
+ ~ (at your option) any later version.
+ ~
+ ~ This program is distributed in the hope that it will be useful,
+ ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ ~ GNU General Public License for more details.
+ ~
+ ~ You should have received a copy of the GNU General Public License
+ ~ along with this program. If not, see http://opensource.org/licenses/gpl-3.0.html
+ ~
+ ~ @category Orangecat
+ ~ @package Orangecat_Featureds
+ ~ @copyright Copyright (c) 2018 Orange Cat
+ ~ @license http://opensource.org/licenses/gpl-3.0.html GNU General Public License,version 3 (GPL-3.0)
+ ~ @author Oliverio Gombert <olivertar@gmail.com>
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Orangecat\Featureds\Block\Adminhtml\Featured\Edit" name="featureds.featured.edit" />
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Orangecat\Featureds\Block\Adminhtml\Featured\Edit\Tabs" name="featureds.featured.edit.tabs">
+                <block class="Orangecat\Featureds\Block\Adminhtml\Featured\Edit\Tab\Main" name="featureds.featured.edit.tab.main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">featureds.featured.edit.tab.main</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

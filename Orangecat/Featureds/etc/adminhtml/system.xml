@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ocfeatureds" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Featured Products</label>
+            <tab>orangecat</tab>
+            <resource>Orangecat_Featureds::config_featureds</resource>
+
+            <group id="instructions" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Instructions</label>
+                <field id="steps" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>Orangecat\Featureds\Block\Adminhtml\System\Config\Instructions</frontend_model>
+                </field>
+            </group>
+            
+            <group id="information" translate="label" type="text" sortOrder="9999" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>About Orange Cat</label>
+                <field id="version" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>Orangecat\Base\Block\Adminhtml\System\Config\Info</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

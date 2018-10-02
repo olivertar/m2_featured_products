@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="orangecat_featureds" class="Orangecat\Featureds\Block\Widget\Featuredproduct">
+        <label translate="true">Featured Products</label>
+        <description>Orange Cat Featured Products</description>
+        <parameters>
+            <parameter name="blockid" xsi:type="block" visible="true" required="true" sort_order="1" >
+                <label translate="true">Block ID</label>
+                <block class="Orangecat\Featureds\Block\Adminhtml\Widget\Chooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Block...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="template" xsi:type="select" visible="true" required="true" sort_order="10">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="widget/featuredproduct.phtml" selected="true">
+                        <label translate="true">Featured Products Default Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
+ 
