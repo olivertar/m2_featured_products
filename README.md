@@ -2,7 +2,7 @@
 
 This module for Magento 2 allows you to create groups of products manually from the backend and display them in the frontend. (Homepage, categories, product pages, cms pages, etc etc)
 
-##Quick Guide
+## Quick Guide
 
 You can add product groups from: Content > Product Blocks
 
@@ -10,7 +10,7 @@ You have different options to display a block of featured products on your site:
 
 The first step will always be to create a block of featured products. Content > Product Blocks
 
-###- Using Magento Widgets
+### - Using Magento Widgets
 
 You can add a new widget from Content > Widget
 
@@ -18,13 +18,13 @@ You must select the widget "Featured Products", after selecting the all options,
 
 you can know more about widgets magento here
 
-###- Include using wysiwyg editor
+### - Include using wysiwyg editor
 
 If the editor shows you the "Insert Widget" button your able to include a block of featured products.
 
 Using this method you can include a block of featured products in CMS pages or CMS Blocks.
 
-###- Layout Update XML (advanced)
+### - Layout Update XML (advanced)
 
 From some parts of the admin panel you can include a block of featured products using XML code.
 
@@ -51,7 +51,7 @@ NAME: You should choose a name for this xml node. The name must be unique.
 ID: It is the ID of the block of featured products that you want to show. You can find the ID in Content > Product Blocks
 
 
-###- Layout XML file (advanced)
+### - Layout XML file (advanced)
 
 if you have enough knowledge, you can also insert XML code directly in the XML files from your theme.
 
@@ -84,7 +84,7 @@ If you have used this module consider the possibility of making a donation
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BJGDM4EZMETKQ)
 
 
-##Screenshots
+## Screenshots
 
 ![ScreenShot](https://github.com/olivertar/m2_featured_products/blob/master/screen-shot/featureds_grid.png)
 <br/><br/>
